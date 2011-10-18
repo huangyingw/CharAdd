@@ -23,8 +23,7 @@ int AccuNum(char* x)
   while(*x!='\0')
   {
     result+=tranNum(*x);
-    x++;
-    if(*x!='\0')
+    if(*++x!='\0')
       result*=10;
   }
 
