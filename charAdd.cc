@@ -9,7 +9,7 @@ int tranNum(char x)
   return x;
 }
 
-int AccuNum(char* x)
+int atoi(char* x)
 {
   int result=0;
   bool positive=true;
@@ -35,10 +35,9 @@ int AccuNum(char* x)
 int main()
 {
   char source1[30]="-234";
-  int result1=AccuNum(source1);
+  int result1=atoi(source1);
   char source2[30]="235";
-  int result2=AccuNum(source2);
+  int result2=atoi(source2);
   cout<<result1+result2<<endl;
   return 0;
 }
-
