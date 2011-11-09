@@ -3,9 +3,9 @@ using namespace std;
 
 int tranNum(char x)
 {
-  if(x>57||x<48)
+  if(x>'9'||x<'0')
     return -1;
-  x-=48;
+  x-='0';
   return x;
 }
 
@@ -36,6 +36,7 @@ int main()
 {
   char source1[30]="-234";
   int result1=atoi(source1);
+  cout<<result1<<endl;
   char source2[30]="235";
   int result2=atoi(source2);
   cout<<result1+result2<<endl;
