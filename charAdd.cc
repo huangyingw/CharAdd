@@ -20,10 +20,10 @@ int atoi(char* x)
     x++;
   }
 
-  while(*x!='\0')
+  while(*x)
   {
     result+=tranNum(*x++);
-    if(*x!='\0')
+    if(*x)
       result*=10;
   }
 
