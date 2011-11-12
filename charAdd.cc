@@ -13,20 +13,17 @@ int atoi(char* x)
 {
   int result=0;
   bool positive=true;
-
   if(*x=='-'||*x=='_')
   {
     positive=false;
     x++;
   }
-
   while(*x)
   {
     result+=tranNum(*x++);
     if(*x)
       result*=10;
   }
-
   if(!positive)
     result=-result;
   return result;
