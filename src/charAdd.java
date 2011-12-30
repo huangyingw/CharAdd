@@ -16,9 +16,8 @@ public class charAdd {
 		}
 		do {
 			result += tranNum(x.charAt(nav++));
-			if (0 != x.charAt(nav))
-				result *= 10;
-		} while (nav < x.length()-1);
+			result *= 10;
+		} while (nav < x.length() - 1);
 		result += tranNum(x.charAt(nav++));
 		if (!positive)
 			result = -result;
