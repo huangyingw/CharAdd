@@ -14,12 +14,10 @@ public class charAdd {
 			positive = false;
 			nav++;
 		}
-		result += tranNum(x[nav++]);
 		while (nav < x.length) {
 			result *= 10;
 			result += tranNum(x[nav++]);
 		}
-		;
 		if (!positive)
 			result = -result;
 		return result;
